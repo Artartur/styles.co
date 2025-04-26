@@ -8,16 +8,24 @@ describe('HeaderBannerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HeaderBannerComponent]
-    })
-    .compileComponents();
+      declarations: [HeaderBannerComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(HeaderBannerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should render', () => {
     expect(component).toBeTruthy();
+  })
+
+  it('should close banner', () => {
+    component.showBanner = true;
+    const result = component.closeBanner();
+
+    expect(component.showBanner).toBeFalsy();
+
+    expect(result).toBeFalsy();
   });
 });
