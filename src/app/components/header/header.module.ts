@@ -4,6 +4,7 @@ import { HeaderComponent } from './header.component';
 import { HeaderBannerComponent } from './header-banner/header-banner.component';
 import { HeaderBrandComponent } from './header-brand/header-brand.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     HeaderBannerComponent,
     HeaderBrandComponent,
     NavbarComponent,
+    SearchComponent,
   ],
   imports: [
     CommonModule
